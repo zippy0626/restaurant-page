@@ -5,8 +5,17 @@
 }
 
 :root {
-    --hoverColorWhite: rgb(250, 250, 250);
-    --activeColorWhite: rgb(245, 245, 245);
+    --navBtnHoverColor: #291609;
+    --navBtnActiveColor: #130903;
+
+    --reserveBtnColor: rgb(195, 125, 29, 1);
+    --reserveBtnHover: rgb(200, 130, 34, 1);
+    --reserveBtnActive: rgb(190, 120, 24, 1);
+    --textColorLight: #decca7;
+    --textColorDark: #decca7f5;
+    --bgColDark: #1b0e06;
+
+    --borderColorDark: #76491b33;
 }
 
 @font-face {
@@ -14,24 +23,39 @@
     src: url("/assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
 }
 
-body {
-    height: 300vh;
-    font-family: OpenSans;
+@font-face {
+    font-family: DMSerif;
+    src: url("/assets/fonts/DMSerif/DMSerifText-Regular.ttf");
 }
 
-/* Fixed Nav */
+section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 300vh;
+    font-family: DMSerif;
+}
+
+/* nav */
 nav {
     width: 100%;
     height: 90px;
+    z-index: 10;
 
-    background-color: white;
-    border-bottom: 1px solid rgb(239, 239, 239);
+    background-color: var(--bgColDark);
+    border-bottom: 1px solid var(--borderColorDark);
+    color: var(--textColorLight);
 
     position: fixed;
+    filter: opacity(.85);
 
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 0.5rem;
 
     padding: 0 1rem 0 3rem;
 }
@@ -50,16 +74,86 @@ nav {
     font-size: 1.25rem;
     font-weight: lighter;
     font-family: inherit;
+    color: inherit;
 
-    background-color: rgb(254, 254, 254);
+    background-color: var(--bgColDark);
     border: none;
+
+    cursor: pointer;
 }
 .btn:hover {
-    background-color: var(--hoverColorWhite);
+    background-color: var(--navBtnHoverColor);
 }
 .btn:active {
-    background-color: var(--activeColorWhite);
+    background-color: var(--navBtnActiveColor);
 }
 .home {
     margin-left: auto;
+}
+
+/* hero section */
+#hero {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    color: var(--textColorLight);
+}
+.hero-img {
+    width: 100vw;
+    position: absolute;
+
+    filter: brightness(0.4);
+    user-select: none;
+}
+.hero-box {
+    position: absolute;
+    top: 50%;
+    left: 6rem;    
+    transform: translateY(-50%);
+
+    z-index: 1;
+
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.hero-main-text {
+    font-size: 4.7rem;
+}
+.hero-text {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--textColorDark);
+}
+.book-reservation { 
+    height: 40px;
+
+    font-family: inherit;
+    color: #5a3a0d;
+    font-size: 1.2rem;
+
+    margin-left: auto;
+    padding: 0 1.3rem 0 1.3rem;
+
+    border-radius: 0;
+    background-color: var(--reserveBtnColor);
+
+    border: 1px rgba(255, 255, 255, 0.216) solid;
+    /* -webkit-box-shadow: 
+        0px 0px 0px 2px var(--reserveBtnColor); 
+    box-shadow: 
+        0px 0px 0px 2px var(--reserveBtnColor); */
+
+    cursor: pointer;
+}
+.book-reservation:hover {
+    background-color: var(--reserveBtnHover);
+}
+.book-reservation:active {
+    background-color: var(--reserveBtnActive);
 }
