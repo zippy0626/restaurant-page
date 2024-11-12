@@ -1,6 +1,8 @@
 # Restaurant Page
 
-This project is part of a learning exercise instructed by the Odin Project curriculum, a completely free and open source *source* of learning Web Dev, HTML, CSS, JS, and React (my own preference), plus other stuff.
+This project is part of a learning exercise instructed by the Odin Project curriculum, a completely free and open source *source* of learning Web Dev, HTML, CSS, JS, and React (my own preference), plus other stuff. 
+
+Topic: Bundling JS files with Webpack
 
 ---
 
@@ -8,31 +10,30 @@ This project is part of a learning exercise instructed by the Odin Project curri
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Things Learned](#things-i-learned)
 - [Installation](#installation)
 - [Live Demo](#live-demo)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
-A detailed description of the project:
-- What does it aim to achieve?
-- Why was it created?
-- Any specific learning goals?
+This project aims to teach me how to bundle stuff like CSS, HTML, HTML img src links, and Javascript files, as dependencies of each other with Webpack.
 
 ## Features
-- List key features of the project
-- Any specific functionality that stands out
-- Challenges or unique implementations
+- Dynamic DOM element creation with JavaScript
+- Tabbed Browsing from Navigation Bar
 
 ## Technologies Used
 - **Languages**: JavaScript, HTML, CSS
-- **Tools**: Webpack, Babel, etc.
+- **Tools**: Webpack
+
+## Things I Learned
+- Import/Export Statements, Named vs. Default
+- NPM, and ES6 Modules
+- Significance of package.json
+- Webpack Manual Configuration (with webpack.config.js)
 
 ## Live Demo
 visit the live demo [here](link-to-live-demo).
 
 ## Contributing
 This is a personal learning project, but feel free to fork or submit issues!
-
-## License
-Distributed under the MIT License. See `LICENSE` for more information.
