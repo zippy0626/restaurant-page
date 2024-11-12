@@ -7,6 +7,7 @@ Topic: Bundling JS files with Webpack
 ---
 
 ## Table of Contents
+- [Preview Image](#preview-image)
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -14,6 +15,10 @@ Topic: Bundling JS files with Webpack
 - [Installation](#installation)
 - [Live Demo](#live-demo)
 - [Contributing](#contributing)
+- [Sources](#sources)
+
+## Preview Image
+<img src="/assets/preview.png" alt="preview image" width="800">
 
 ## Overview
 This project aims to teach me how to bundle stuff like CSS, HTML, HTML img src links, and Javascript files, as dependencies of each other with Webpack.
@@ -37,3 +42,6 @@ visit the live demo [here](link-to-live-demo).
 
 ## Contributing
 This is a personal learning project, but feel free to fork or submit issues!
+
+## Sources
+Background Images from [Pexels](pexels.com)
