@@ -44,4 +44,4 @@ visit the live demo [here](link-to-live-demo).
 This is a personal learning project, but feel free to fork or submit issues!
 
 ## Sources
-Background Images from [Pexels](pexels.com)
+Background Images from [Pexels](https://www.pexels.com)
